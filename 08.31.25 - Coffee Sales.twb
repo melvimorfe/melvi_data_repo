@@ -1,0 +1,711 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Coffe_sales.csv (Multiple Connections)' inline='true' name='federated.05jbx690b5fm7h11m47cy08w7hqi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Coffe_sales_main' name='textscan.16frfw01h3n44v16zn6vo0x8ici1'>
+            <connection class='textscan' directory='C:/Users/Cosmicfish/Documents/My Tableau Repository/Datasources' filename='Coffe_sales.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.16frfw01h3n44v16zn6vo0x8ici1' name='Coffe_sales.csv' table='[Coffe_sales#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+            <column datatype='integer' name='hour_of_day' ordinal='0' />
+            <column datatype='string' name='cash_type' ordinal='1' />
+            <column datatype='real' name='money' ordinal='2' />
+            <column datatype='string' name='coffee_name' ordinal='3' />
+            <column datatype='string' name='Time_of_Day' ordinal='4' />
+            <column datatype='string' name='Weekday' ordinal='5' />
+            <column datatype='string' name='Month_name' ordinal='6' />
+            <column datatype='integer' name='Weekdaysort' ordinal='7' />
+            <column datatype='integer' name='Monthsort' ordinal='8' />
+            <column datatype='date' name='Date' ordinal='9' />
+            <column datatype='datetime' name='Time' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₱&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_PH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour_of_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour_of_day]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>hour_of_day</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cash_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cash_type]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>cash_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>money</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[money]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>money</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coffee_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[coffee_name]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>coffee_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_of_Day</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time_of_Day]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>Time_of_Day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekday</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekday]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>Weekday</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month_name]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>Month_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekdaysort</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weekdaysort]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>Weekdaysort</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthsort</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Monthsort]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>Monthsort</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[Coffe_sales.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Month name' datatype='string' name='[Month_name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Monthsort]' role='measure' type='quantitative' />
+      <column caption='Time of Day' datatype='string' name='[Time_of_Day]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Weekday]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Weekdaysort]' role='measure' type='quantitative' />
+      <column caption='Coffe_sales.csv' datatype='table' name='[__tableau_internal_object_id__].[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]' role='measure' type='quantitative' />
+      <column caption='Cash Type' datatype='string' name='[cash_type]' role='dimension' type='nominal' />
+      <column caption='Coffee Name' datatype='string' name='[coffee_name]' role='dimension' type='nominal' />
+      <column caption='Hour Of Day' datatype='integer' name='[hour_of_day]' role='dimension' type='quantitative' />
+      <column caption='Money' datatype='real' name='[money]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[money]' derivation='Avg' name='[avg:money:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Weekday]' derivation='None' name='[none:Weekday:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Monthsort]' derivation='Sum' name='[sum:Monthsort:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Weekdaysort]' derivation='Sum' name='[sum:Weekdaysort:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[money]' derivation='Sum' name='[sum:money:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/COSMIC~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1j0qxbc0hsxez31106tpz0eny2o1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/30/2025 04:18:06 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>hour_of_day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hour_of_day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hour_of_day</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cash_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cash_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cash_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>money</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[money]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>money</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coffee_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[coffee_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coffee_name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time_of_Day</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time_of_Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time_of_Day</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weekday</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weekday]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weekday</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month_name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weekdaysort</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Weekdaysort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weekdaysort</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Monthsort</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Monthsort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Monthsort</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>405</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Coffe_sales.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>3547</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Weekday:nk]' palette='brown_10_0' type='palette'>
+            <map to='#9f3632'>
+              <bucket>&quot;Sat&quot;</bucket>
+            </map>
+            <map to='#b44f35'>
+              <bucket>&quot;Fri&quot;</bucket>
+            </map>
+            <map to='#c26c43'>
+              <bucket>&quot;Thu&quot;</bucket>
+            </map>
+            <map to='#d18954'>
+              <bucket>&quot;Wed&quot;</bucket>
+            </map>
+            <map to='#e1a260'>
+              <bucket>&quot;Tue&quot;</bucket>
+            </map>
+            <map to='#eabe83'>
+              <bucket>&quot;Mon&quot;</bucket>
+            </map>
+            <map to='#eedbbd'>
+              <bucket>&quot;Sun&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.05jbx690b5fm7h11m47cy08w7hqi].[__tableau_internal_object_id__].[cnt:Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.05jbx690b5fm7h11m47cy08w7hqi].[sum:Weekdaysort:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.05jbx690b5fm7h11m47cy08w7hqi].[sum:Monthsort:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.05jbx690b5fm7h11m47cy08w7hqi].[avg:money:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.05jbx690b5fm7h11m47cy08w7hqi].[sum:money:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Coffe_sales.csv' id='Coffe_sales.csv_57E083FE203841FA925C23230D0DDB10'>
+            <properties context=''>
+              <relation connection='textscan.16frfw01h3n44v16zn6vo0x8ici1' name='Coffe_sales.csv' table='[Coffe_sales#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+                  <column datatype='integer' name='hour_of_day' ordinal='0' />
+                  <column datatype='string' name='cash_type' ordinal='1' />
+                  <column datatype='real' name='money' ordinal='2' />
+                  <column datatype='string' name='coffee_name' ordinal='3' />
+                  <column datatype='string' name='Time_of_Day' ordinal='4' />
+                  <column datatype='string' name='Weekday' ordinal='5' />
+                  <column datatype='string' name='Month_name' ordinal='6' />
+                  <column datatype='integer' name='Weekdaysort' ordinal='7' />
+                  <column datatype='integer' name='Monthsort' ordinal='8' />
+                  <column datatype='date' name='Date' ordinal='9' />
+                  <column datatype='datetime' name='Time' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average Sales per Coffee Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Coffe_sales.csv (Multiple Connections)' name='federated.05jbx690b5fm7h11m47cy08w7hqi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05jbx690b5fm7h11m47cy08w7hqi'>
+            <column-instance column='[money]' derivation='Avg' name='[avg:money:qk]' pivot='key' type='quantitative' />
+            <column caption='Coffee Name' datatype='string' name='[coffee_name]' role='dimension' type='nominal' />
+            <column caption='Money' datatype='real' name='[money]' role='measure' type='quantitative' />
+            <column-instance column='[coffee_name]' derivation='None' name='[none:coffee_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[money]' derivation='Sum' name='[sum:money:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05jbx690b5fm7h11m47cy08w7hqi].[none:coffee_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05jbx690b5fm7h11m47cy08w7hqi].[avg:money:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05jbx690b5fm7h11m47cy08w7hqi].[none:coffee_name:nk]' />
+              <lod column='[federated.05jbx690b5fm7h11m47cy08w7hqi].[sum:money:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05jbx690b5fm7h11m47cy08w7hqi].[avg:money:qk]</rows>
+        <cols>[federated.05jbx690b5fm7h11m47cy08w7hqi].[none:coffee_name:nk]</cols>
+      </table>
+      <simple-id uuid='{06AA86F2-C879-403C-9C06-148E4AD23E98}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.05jbx690b5fm7h11m47cy08w7hqi].[none:coffee_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05jbx690b5fm7h11m47cy08w7hqi].[:Measure Names]</field>
+            <field>[federated.05jbx690b5fm7h11m47cy08w7hqi].[avg:money:qk]</field>
+            <field>[federated.05jbx690b5fm7h11m47cy08w7hqi].[none:Time_of_Day:nk]</field>
+            <field>[federated.05jbx690b5fm7h11m47cy08w7hqi].[none:Weekday:nk]</field>
+            <field>[federated.05jbx690b5fm7h11m47cy08w7hqi].[none:coffee_name:nk]</field>
+            <field>[federated.05jbx690b5fm7h11m47cy08w7hqi].[none:hour_of_day:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E7DD1BC3-AA19-4477-9B42-038419BA7DF7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
